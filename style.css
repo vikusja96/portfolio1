@@ -1,0 +1,79 @@
+:root {
+    --color-primary:#262626;
+    --color-secondary-light:#8C8C8C;
+    --color-secondary-dark:#595959;
+    --color-white:#F2F2F2;
+    --color-black:#0D0D0D;
+
+    --font-primary: 'Yeseva One', cursive;
+    --font-secondary: 'Marck Script', cursive;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+}
+.Navigation {
+    width: 114rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Navigation__logo {
+    font-size: 4rem;
+    color: var(--color-white);
+}
+.Navigation__nav {}
+.Navigation__list {}
+
+.Navigation__item {
+    list-style: none;
+    display: inline-block;
+    font-family: var(--font-secondary);
+    font-size: 2.2rem;
+    padding-left: 4rem;
+}
+.Navigation__link {
+    text-decoration: none;
+    color: var(--font-primary)
+}
+
+
+
+.Header__image {
+    width: 30rem;
+    height: auto;
+}
+.Header__image img{
+    width: 100%;
+    height: auto;
+}
